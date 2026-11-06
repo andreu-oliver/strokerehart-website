@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="StrokeRehart is a research project exploring recovery and rehabilitation using participant-authorised wearable health data.">
+  <meta name="theme-color" content="#f7f8f5">
+  <link rel="canonical" href="https://strokerehart.eu/">
+  <title>StrokeRehart — Research and rehabilitation</title>
+  <style>
+    :root{--ink:#172b2a;--muted:#60716d;--green:#286c5e;--mint:#e3eee8;--paper:#f7f8f5;--line:#e2e8e2;--white:#fff;--max:1080px}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.7 ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+    a{color:var(--green)}a:hover{text-decoration-thickness:2px}.wrap{width:min(var(--max),calc(100% - 48px));margin:auto}
+    header{height:80px;display:flex;align-items:center;border-bottom:1px solid var(--line)}.nav{display:flex;justify-content:space-between;align-items:center;width:100%}
+    .brand{display:flex;gap:12px;align-items:center;text-decoration:none;color:var(--ink);font-size:20px;font-weight:750;letter-spacing:-.7px}.mark{width:34px;height:34px;border-radius:11px;background:var(--green);display:grid;place-items:center;color:white;font-weight:800}
+    nav{display:flex;gap:26px;font-size:14px;color:var(--muted)}nav a{text-decoration:none;color:inherit}nav a:hover{color:var(--green)}
+    .hero{padding:105px 0 90px;display:grid;grid-template-columns:1.25fr .75fr;gap:72px;align-items:center}.eyebrow{color:var(--green);font-weight:750;font-size:12px;letter-spacing:2px;text-transform:uppercase}
+    h1,h2,h3{line-height:1.16;letter-spacing:-1.1px}h1{font-size:clamp(42px,6vw,68px);margin:18px 0 24px;max-width:720px}h2{font-size:36px;margin:10px 0 16px}h3{font-size:19px;letter-spacing:-.4px}
+    .lead{font-size:19px;color:var(--muted);max-width:690px;line-height:1.75}.hero-card{background:var(--mint);border-radius:28px;padding:30px;min-height:300px;display:flex;flex-direction:column;justify-content:space-between}
+    .pulse{width:58px;height:58px;border:1px solid rgba(40,108,94,.25);border-radius:18px;display:grid;place-items:center;color:var(--green);font-size:30px}.hero-card strong{font-size:23px;line-height:1.25;display:block;max-width:260px}.hero-card p{color:#49665e;margin-bottom:0;font-size:14px}
+    .section{padding:76px 0;border-top:1px solid var(--line)}.intro{max-width:730px;color:var(--muted);font-size:17px}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:34px}.tile{background:var(--white);border:1px solid var(--line);border-radius:18px;padding:24px}.tile h3{margin:0 0 12px}.tile p{color:var(--muted);font-size:14px;margin:0}
+    .policy{background:#edf3ef;border-left:3px solid var(--green);padding:18px 22px;margin-top:28px;color:#415d54;font-size:14px}.policy a{color:#245f53}
+    footer{padding:34px 0;border-top:1px solid var(--line);color:var(--muted);font-size:13px}.foot{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap}.links{display:flex;gap:20px;flex-wrap:wrap}.links a{text-decoration:none;color:inherit}.links a:hover{text-decoration:underline;color:var(--green)}
+    @media(max-width:760px){.hero{grid-template-columns:1fr;gap:36px;padding:72px 0}.grid{grid-template-columns:1fr}nav{gap:14px;font-size:12px}.brand{font-size:17px}}
+  </style>
+</head>
+<body>
+<header><div class="wrap nav">
+  <a class="brand" href="/" aria-label="StrokeRehart home"><span class="mark" aria-hidden="true">S</span>StrokeRehart</a>
+  <nav aria-label="Main navigation"><a href="#about">About</a><a href="#data">Data use</a><a href="/privacy/">Privacy</a></nav>
+</div></header>
+<main>
+  <section class="wrap hero">
+    <div>
+      <div class="eyebrow">Research · Health · Rehabilitation</div>
+      <h1>Understanding recovery through everyday health data.</h1>
+      <p class="lead">StrokeRehart is a research project exploring recovery and rehabilitation through participant-authorised wearable health information. The data collection service connects to Google Health to collect selected activity, heart-rate and sleep information for the purposes described to participants during study enrolment.</p>
+    </div>
+    <aside class="hero-card">
+      <div class="pulse" aria-hidden="true">∿</div>
+      <div><strong>Making health data useful for research.</strong><p>Purposeful data collection, clear participant information and responsible research practices.</p></div>
+    </aside>
+  </section>
+  <section class="section" id="about"><div class="wrap">
+    <div class="eyebrow">About StrokeRehart</div><h2>Research into recovery.</h2>
+    <p class="intro">The StrokeRehart data collection service is designed to organise health information shared by participants through Google Health. The application supports research workflows by collecting and presenting selected measures over time. It is a research data-collection tool, not an emergency service, diagnostic system or substitute for professional medical advice.</p>
+    <div class="grid">
+      <article class="tile"><h3>Participant-authorised</h3><p>Access to a participant's Google Health information is requested through Google's authorisation process and is subject to the permissions shown there.</p></article>
+      <article class="tile"><h3>Selected health measures</h3><p>The current integration is configured for activity and fitness, health metrics and measurements, and sleep data.</p></article>
+      <article class="tile"><h3>Research workflows</h3><p>Collected information is organised for the study's data-collection and analysis workflows and is made available to authorised project personnel.</p></article>
+    </div>
+  </div></section>
+  <section class="section" id="data"><div class="wrap">
+    <div class="eyebrow">Data and transparency</div><h2>How information is used.</h2>
+    <p class="intro">StrokeRehart accesses Google Health data only after authorisation and uses it for the research purpose explained to participants. The exact data categories, recipients, storage arrangements, retention periods and participant-rights procedures are described in the Privacy Policy and study information provided during enrolment.</p>
+    <div class="policy">The use of information received from Google Health API and/or Developer Tools will adhere to the <a href="https://developers.google.com/health/policies/health-api-developer-user-data-policy">Google Health API Developer and User Data Policy</a> and the <a href="https://developers.google.com/health/policies/health-api-user-data-and-research-policy">Google Health API User Data and Health Research Policy</a>, including the applicable Limited Use requirements.</div>
+    <p class="intro" style="margin-top:24px;font-size:15px">Please read our <a href="/privacy/">Privacy Policy</a> for information about data collection, use, storage, sharing, retention and deletion.</p>
+  </div></section>
+</main>
+<footer><div class="wrap foot">
+  <div>© <span id="year"></span> StrokeRehart.</div>
+  <div class="links"><a href="/privacy/">Privacy Policy</a></div>
+</div></footer>
+<script>document.getElementById("year").textContent=new Date().getFullYear();</script>
+</body>
+</html>
